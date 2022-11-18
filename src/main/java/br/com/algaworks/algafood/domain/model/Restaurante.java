@@ -5,7 +5,6 @@ import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.util.Objects;
 
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
@@ -20,5 +19,8 @@ public class Restaurante {
     private String nome;
 
     private BigDecimal taxaFrete;
+
+    @ManyToOne
+    private Cozinha cozinha;
 
 }
