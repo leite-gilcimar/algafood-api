@@ -20,8 +20,6 @@ public class Cozinha {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    //@JsonIgnore // Remove a propriedade no retorno
-    //@JsonProperty("titulo") // Moda o nome da propriedade para titulo
     @Column(nullable = false)
     private String nome;
 
