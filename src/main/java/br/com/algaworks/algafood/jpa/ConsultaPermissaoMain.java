@@ -20,7 +20,7 @@ public class ConsultaPermissaoMain {
         List<Permissao> todasPermissao = permissaoRepository.todas();
 
         for(Permissao permissao: todasPermissao){
-            System.out.printf("Nome: %s Descrição: %s",permissao.getNome(), permissao.getDescricao());
+            System.out.printf("Nome: %s Descrição: %s\n",permissao.getNome(), permissao.getDescricao());
         }
     }
 }
